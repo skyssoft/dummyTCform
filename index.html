@@ -63,16 +63,91 @@ border-collapse: collapse;
 padding-left: 5px;
 padding-right: 3px;
 }
+    .useful-links-box{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 200px;
+    background: white;
+    border: 2px solid #550649;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 9999;
+    overflow: hidden;
+}
 
+.useful-links-header{
+    background: #2226fa;
+    color: white;
+    border-radius: 3px;
+    padding: 6px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.useful-links-body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.useful-link-btn{
+    display: block;
+    text-decoration: none;
+    background: #087931;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.useful-link-btn:hover{
+    background: #05491f;
+}
 
 	</style>
 </head>
 
 <body style="margin-top: 25px;">
 	
+<div class="useful-links-box no-print-area">
+
+    <div class="useful-links-header">
+        Useful Links
+    </div>
+
+    <div class="useful-links-body">
+
+        <a 
+            class="useful-link-btn"
+            href="https://skyssoft.github.io/SampleSeatingArrangement/"
+            target="_blank"
+        >
+            📄 Exam Seating Arrangement
+        </a>
+
+    </div>
+    <div class="useful-links-body">
+
+        <a 
+            class="useful-link-btn"
+            href="https://skyssoft.github.io/voucherPrint/samplevoucher"
+            target="_blank"
+            
+        >
+            📄 Voucher Print
+        </a>
+
+    </div>
+
+
 	<div id="pdf-content">
 	<div class="container"  >
-		<h4 style="color: crimson; text-align: right;">Customer Care Support : 9544077151 </h4>
+		<h4 style="color: crimson; text-align: right;">Contact: 9526455151 </h4>
 		<div style="width: 200px; position: absolute; padding-top: 30px; padding-left: 40px; ">
 		<img src="dummy.png" class="imagestyle">
 		</div>
