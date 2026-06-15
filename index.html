@@ -108,7 +108,57 @@ padding-right: 3px;
 .useful-link-btn:hover{
     background: #05491f;
 }
+.button-3 {
+  appearance: none;
+  background-color: #1b592c;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+		
 	</style>
 </head>
 
@@ -118,24 +168,36 @@ padding-right: 3px;
 	
 
 	<div id="pdf-content">
-	<div class="container"  >
-		<h4 style="color: crimson; text-align: right;">Contact: 9526455151 </h4>
+	<div class="container" style="background-color: rgb(49, 14, 137); border-radius: 31px; margin-bottom: 40px;"  >
+
+<div style="padding-top: 15px;"> 
+				<div style="color: rgb(248, 250, 247); font-weight: 500; padding-left: 50px; "  > Quick Links>>>
+				
+				<a href="https://skyssoft.github.io/SampleSeatingArrangement/"><input type="button" class="button-3" value="Exam Seating Arrangement";> </a>
+				<a href="https://skyssoft.github.io/voucherPrint/samplevoucher"><input type="button" class="button-3" value="Voucher Print";></a>
+				<span style="color: rgb(255, 255, 255); text-align: right; font-size: 25 px;">Contact: 9526455151 </span>
+				</div>
+			</div>
+
+
+
+		
 		<div style="width: 200px; position: absolute; padding-top: 30px; padding-left: 40px; ">
 		<img src="dummy.png" class="imagestyle">
 		</div>
 		<div>
 			
 		<div style="padding-left: 160px; padding-right: 200px;">
-		<h3 class="heading" style="padding-top: 25px;">
+		<h3 class="heading" style="padding-top: 25px; color: #ffffff;">
 			SAMPLE ARTS & SCIENCE COLLEGE
 				</h3>
 				
-	<h2 class="heading" style="padding-top: 5px; padding-bottom: 25px; font-size: 30px;">
-	Transfer & Conduct Certificate
+	<h2 class="heading" style="padding-top: 5px; padding-bottom: 25px; font-size: 30px; color: #ffd902;">Transfer & Conduct Certificate
+	<h5 style="color: red; text-align: center; ">  Please verify before generate TC &#9989;</h4>
 	</h2>
 	
 </div>
-	<h4 style="color: red; text-align: center;"> Please verify before generate TC </h4>
+	
 
 	<!-- Form encrypted as text -->
 	<form id ="form-print" enctype="text/plain" class="form-control" style="padding: 50px;">
@@ -325,6 +387,9 @@ padding-right: 3px;
 </div>
 				
 	<script>		
+
+
+
 		function GeneratePdf() {
 	// Get user data
 	const tcno = document.getElementById('tcno').value;
@@ -483,7 +548,7 @@ Office seal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb
 
 	// Generate the PDF using html2pdf
 	html2pdf().from(document.getElementById('pdf-content')).save('tc.pdf');
-	
+	 
 }
 	</script>
 	
